@@ -1,37 +1,43 @@
 /*
-*ListNode.java
-*Holds an Object(value) and the next node in the chain.
+*	ListNode.java
+*	Holds an Object(value) and the next node in the chain.
 */
 
-public class ListNode
-{
-	private Object value;
-	private ListNode next;
+public class ListNode<E> {
+	private E value;
+	private ListNode next = null;
+	private ListNode prev = null;
 
-	public ListNode(Object initValue, ListNode initNext)
-	{
-		value = initValue;
+	public ListNode(E value) {
+		data = value;
+	} // end constructor
+	
+	public ListNode(E value, ListNode initNext) {
+		data = value;
 		next = initNext;
-	} // return constructor
+	} // end constructor
 
-	public Object getValue()
-	{
+	public E getData() {
 		return value;
-	} // end getValue
+	} // end getData
 
-	public ListNode getNext()
-	{
+	public ListNode getNext() {
 		return next;
 	} // end getNext
 
-	public void setValue(Object theNewValue)
-	{
-		value = theNewValue;
+	public ListNode getPrev() {
+		return prev;
+	} // end getPrev
+
+	public void setValue(E newData) {
+		value = newData;
 	} // end setValue
 
-	public void setNext(ListNode theNewNext)
-	{
-		next = theNewNext;
+	public void setNext(ListNode newNext) {
+		next = newNext;
 	} // end setNext
 
+	public void setPrev(ListNode newPrev) {
+		prev = newPrev;
+	} // end setPrev
 } // end class

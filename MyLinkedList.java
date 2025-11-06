@@ -12,7 +12,7 @@ public class MyLinkedList<E> {
     private ListNode<E> tail;
     private int size = 0;
 
-    // no constructor needed (implcit)
+    // no constructor needed (implicit)
 
     public boolean add(E element) {
         ListNode<E> newNode = new ListNode<>(element);

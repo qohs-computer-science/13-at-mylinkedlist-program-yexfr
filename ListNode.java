@@ -7,8 +7,8 @@
 
 public class ListNode<E> {
 	private E value;
-	private ListNode next = null;
-	private ListNode prev = null;
+	private ListNode next;
+	private ListNode prev;
 
 	public ListNode(E value) {
 		data = value;

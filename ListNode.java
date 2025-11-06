@@ -1,6 +1,8 @@
 /*
-*	ListNode.java
-*	Holds an Object(value) and the next node in the chain.
+    Name: Nick Griffith
+    Period: 6
+    Date: 11/6/25
+    Description: Nodes placed in MyLinkedList, hold a data value and the node before and in front of them/
 */
 
 public class ListNode<E> {
